@@ -40,6 +40,14 @@ module.exports = {
                 }],
             },
             {
+                test: /\.html$/,
+                use: [
+                        {
+                            loader: 'html-loader'
+                        }
+                ]
+            },
+            {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
