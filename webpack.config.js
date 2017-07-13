@@ -17,10 +17,15 @@ module.exports = {
             {
                 test: /\.js|x$/,
                 exclude: [/node_modules/],
-                use: [{
-                loader: 'babel-loader',
-                options: { presets: ['es2015','react'] },
-                }],
+                use: [
+                    // {
+                    //     loader: 'eslint-loader'
+                    // },
+                    {
+                        loader: 'babel-loader',
+                        options: { presets: ['es2015','react'] },
+                    }
+                ],
             },
             {
                 test: /\.html$/,
