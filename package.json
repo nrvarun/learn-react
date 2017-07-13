@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf ./dist",
-    "dev": "webpack-dev-server --hot --inline",
+    "dev": "webpack-dev-server --colors --inline --watch-poll",
     "prod": "webpack --config prod.config.js --progress --display-error-details --color"
   },
   "dependencies": {

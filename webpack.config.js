@@ -23,7 +23,7 @@ module.exports = {
                     // },
                     {
                         loader: 'babel-loader',
-                        options: { presets: ['es2015','react'] },
+                        options: { presets: ['env','es2015','react'] },
                     }
                 ],
             },
@@ -78,7 +78,6 @@ module.exports = {
     },
     devServer: {
         contentBase: "./src",
-        hot: true,
         open: true
     },
     output: {
