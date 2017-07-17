@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf ./dist",
-    "dev": "webpack-dev-server --colors --inline --watch-poll",
-    "prod": "webpack --config prod.config.js --progress --display-error-details --color"
+    "dev": "webpack-dev-server --color --inline --watch-poll",
+    "prod": "webpack --config prod.config.js --display-error-details --color"
   },
   "dependencies": {
     "babel-core": "^6.25.0",
