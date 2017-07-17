@@ -1,4 +1,5 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 class ShowList extends React.Component {
   render() {
@@ -17,5 +18,10 @@ class ShowList extends React.Component {
     )
   }
 }
+
+ShowList.propTypes = {
+    names: propTypes.array.isRequired
+};
+
 
 export default ShowList;
